@@ -12,6 +12,8 @@
 [![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)]()
 
 <br/>
+<img src="assets/project_banner.jpg" alt="Pneumonia Detection AI Banner" width="100%"/>
+<br/>
 
 > **🎓 Built as part of AI/ML Technical Training — Exploring Transfer Learning, Data Augmentation & Medical Image Classification with Convolutional Neural Networks**
 
@@ -241,12 +243,25 @@ train_datagen = ImageDataGenerator(
 
 ## 🖼️ Visualizations
 
-### 📈 Training History — Accuracy & Loss Over 25 Epochs
-
+### 📊 Class Distribution
 <div align="center">
+<img src="assets/class_distribution.png" alt="Class Distribution" width="60%"/>
+</div>
 
+---
+
+### 🩻 Sample Data (Augmented X-Ray Images)
+<div align="center">
+<img src="assets/sample_xray_images.png" alt="Sample X-Ray Images" width="90%"/>
+<br/>
+<img src="assets/sample_xray_images_2.png" alt="Sample X-Ray Images" width="90%"/>
+</div>
+
+---
+
+### 📈 Training History — Accuracy & Loss
+<div align="center">
 <img src="assets/training_history.png" alt="Training History - Accuracy and Loss Curves" width="90%"/>
-
 </div>
 
 > The plots show the model's **training and validation accuracy/loss** across 25 epochs. The training accuracy steadily climbs to ~96% while validation accuracy peaks at ~96.43% (Epoch 20). The loss curves demonstrate healthy convergence with no severe overfitting.
@@ -254,16 +269,33 @@ train_datagen = ImageDataGenerator(
 ---
 
 ### 🔢 Confusion Matrix — Test Set Performance
-
 <div align="center">
-
 <img src="assets/confusion_matrix.png" alt="Confusion Matrix - MobileNetV2" width="50%"/>
-
 </div>
 
 > The confusion matrix reveals strong classification performance with only **3 misclassifications out of 40 test samples** — 2 false positives and 1 false negative, achieving a balanced and clinically reliable result.
 
 ---
+
+### 🎯 ROC AUC & Precision-Recall Curves
+<div align="center">
+<img src="assets/roc_auc_curve.png" alt="ROC Curve" width="48%"/>
+<img src="assets/precision_recall_curve.png" alt="PR Curve" width="48%"/>
+</div>
+
+---
+
+### 🔍 Sample Model Predictions
+<div align="center">
+<img src="assets/sample_predictions.png" alt="Sample Predictions" width="90%"/>
+</div>
+
+---
+
+### 📝 Prediction Summary
+<div align="center">
+<img src="assets/prediction_summary.png" alt="Prediction Summary" width="60%"/>
+</div>
 
 ## 🛠️ Tech Stack
 
@@ -337,8 +369,14 @@ Pneumonia-Xray-CNN-Detection/
 ├── 🚫 .gitignore                            # Git ignore rules
 │
 └── 📁 assets/                               # Visualization outputs
-    ├── 📈 training_history.png              # Accuracy & Loss curves
-    └── 🔢 confusion_matrix.png             # Confusion Matrix heatmap
+    ├── 🖼️ project_banner.jpg               # AI Banner Image
+    ├── 📊 class_distribution.png           # Dataset Distribution
+    ├── 🩻 sample_xray_images.png           # X-Ray Data Samples
+    ├── 📈 training_history.png             # Accuracy & Loss Curves
+    ├── 🔢 confusion_matrix.png             # Confusion Matrix
+    ├── 🎯 roc_auc_curve.png                # ROC AUC Curve
+    ├── 🔍 sample_predictions.png           # Actual Model Predictions
+    └── 📝 prediction_summary.png           # Correct/Incorrect Summary
 ```
 
 ---
